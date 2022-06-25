@@ -1,6 +1,6 @@
 .nav-bar {
   background-color: #181818;
-  width: 100px;
+  width: 60px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -29,14 +29,14 @@
     position: absolute;
     height: 210px;
     top: 50%;
-    margin-top: -150px;
+    margin-top: -140px;
     width: 100%;
 
     a {
-      font-size: 50px;
+      font-size: 40px;
       color: #4d4d4e;
       display: block;
-      line-height: 100px;
+      line-height: 60px;
       position: relative;
       text-decoration: none;
 
@@ -85,6 +85,30 @@
     a.contact-link {
       &:after {
         content: 'CONTACT';
+      }
+    }
+  }
+
+  ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+      a {
+        padding:7px 0;
+        display:block;
+        font-size: 30px;
+        line-height: 50px;
+
+        &:hover svg {
+          color:#ffd700;
+        }
       }
     }
   }

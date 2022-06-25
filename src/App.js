@@ -3,13 +3,16 @@
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
+import Home from './components/Home';
 
 function App() {
   return (
     // eslint-disable-next-line react/jsx-no-useless-fragment
     <>
       <Routes>
-        <Route path="/" element={<Layout />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+        </Route>
       </Routes>
     </>
   );
