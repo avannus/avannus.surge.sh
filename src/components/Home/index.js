@@ -3,7 +3,7 @@
 import './index.scss';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import LogoA from '../../assets/images/logo-image.png'; // fixme replace
+import LogoA from '../../assets/images/logo-image.png';
 
 function Home() {
   return (
@@ -16,8 +16,6 @@ function Home() {
           {'I\'m'}
           <img src={LogoA} alt="developer" />
           ndrew
-          <br />
-          developer
         </h1>
         <h2>Student / Developer / Tinkerer</h2>
         <Link to="/contact" className="flat-button">CONTACT ME</Link>
