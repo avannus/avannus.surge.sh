@@ -34,17 +34,17 @@
       position: absolute;
       margin-top: 18px;
       margin-left: 20px;
-      animation: fadeIn 1s 1.7s backwards;
+      animation: fadeIn 1s 1.7s both backwards;
       opacity: 0.6;
     }
 
     img {
-      width: 32px;
+      width: 30px;
       margin-left: 20px;
       opacity: 0;
       height: auto;
-      animation: rotateIn 1s linear both;
-      animation-delay: 1.4s;
+      animation: fadeInDown .75s both;
+      animation-delay: .75s;
     }
   }
 
@@ -55,7 +55,7 @@
     font-style: 11px;
     font-family: sans-serif;
     letter-spacing: 3px;
-    animation: fadeIn 1s 1.8s backwards;
+    animation: fadeIn .75s .75s backwards;
   }
 
   .flat-button {

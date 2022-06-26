@@ -3,7 +3,8 @@
 import './index.scss';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import LogoA from '../../assets/images/logo-image.png';
+// import Loader from 'react-loaders';
+import LogoImage from '../../assets/images/logo-image.png';
 
 function Home() {
   return (
@@ -14,11 +15,13 @@ function Home() {
           {' '}
           <br />
           {'I\'m'}
-          <img src={LogoA} alt="developer" />
+          <img src={LogoImage} alt="developer" />
           ndrew
         </h1>
         <h2>Student / Developer / Tinkerer</h2>
-        <Link to="/contact" className="flat-button">CONTACT ME</Link>
+        <Link to="/contact" className="flat-button">
+          CONTACT ME
+        </Link>
       </div>
     </div>
   );
