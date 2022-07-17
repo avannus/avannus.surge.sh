@@ -5,11 +5,11 @@ import { Link, NavLink } from 'react-router-dom';
 import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import LogoS from '../../assets/images/logo-image.png';
-import LogoSubtitle from '../../assets/images/logo-text.png';
+import LogoS from '../../assets/images/logo-image-256.png';
+import LogoSubtitle from '../../assets/images/logo-text-32.png';
 
 const iconColor = '#4d4d4e';
-
+image.png;
 function Sidebar() {
   return (
     <div className="nav-bar">
@@ -33,7 +33,7 @@ function Sidebar() {
           exact="true"
           activeclassname="active"
           className="contact-link"
-          to="/content"
+          to="/contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color={iconColor} />
         </NavLink>

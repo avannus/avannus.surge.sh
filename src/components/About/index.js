@@ -1,12 +1,11 @@
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable react/jsx-no-useless-fragment */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faAngular, faCss3, faGitAlt, faJsSquare, faNode, faReact,
+  faGitAlt, faJava, faLinux, faNode, faPython, faReact,
 } from '@fortawesome/free-brands-svg-icons';
 import React from 'react';
 import './index.scss';
-// import Loader from 'react-loaders';
+import Loader from 'react-loaders';
 
 function About() {
   return (
@@ -46,28 +45,29 @@ function About() {
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+              <FontAwesomeIcon icon={faJava} color="#f89820" />
+              {/* java colors #f89820 #5382a1 */}
               {/* todo update icons and colors */}
             </div>
             <div className="face2">
-              <FontAwesomeIcon icon={faGitAlt} color="#DD0031" />
+              <FontAwesomeIcon icon={faGitAlt} color="#F1502F" />
             </div>
             <div className="face3">
-              <FontAwesomeIcon icon={faCss3} color="#DD0031" />
+              <FontAwesomeIcon icon={faPython} color="#4b8bbe" />
             </div>
             <div className="face4">
-              <FontAwesomeIcon icon={faReact} color="#DD0031" />
+              <FontAwesomeIcon icon={faReact} color="#61dbfb" />
             </div>
             <div className="face5">
-              <FontAwesomeIcon icon={faNode} color="#DD0031" />
+              <FontAwesomeIcon icon={faNode} color="#68a063" />
             </div>
             <div className="face6">
-              <FontAwesomeIcon icon={faJsSquare} color="#DD0031" />
+              <FontAwesomeIcon icon={faLinux} color="black" />
             </div>
           </div>
         </div>
       </div>
-      {/* <Loader type="pacman" /> */}
+      <Loader type="pacman" />
     </>
   );
 }

@@ -25,37 +25,31 @@ $cube-size: 150px;
     width: ($cube-size * 2);
     height: ($cube-size * 2);
     border: 1px solid #ccc;
-    background: rgba(255,255,255,.4);
+    background: rgba(#fff,.95);
     font-size: $cube-size;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 20px 0px lightyellow;
+    box-shadow: 0 0 5px 0px #fff;
   }
 
   .face1 {
     transform: translateZ($cube-size);
-    color: #dd0031;
   }
   .face2 {
     transform: rotateY(90deg) translateZ($cube-size);
-    color: #f06529;
   }
   .face3 {
     transform: rotateY(90deg) rotateX(90deg) translateZ($cube-size);
-    color: #28a4d9;
   }
   .face4 {
     transform: rotateY(180deg) rotateZ(90deg) translateZ($cube-size);
-    color: #5ed4f4;
   }
   .face5 {
     transform: rotateY(-90deg) rotateZ(90deg) translateZ($cube-size);
-    color: #efd81d;
   }
   .face6 {
     transform: rotateX(-90deg) translateZ($cube-size);
-    color: #ec4d28;
   }
 }
 
@@ -65,18 +59,18 @@ $cube-size: 150px;
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
   16% {
-    transform: rotateY(-90deg);
+    transform: rotateY(270deg);
   }
   33% {
-    transform: rotateY(-90deg) rotateZ(90deg);
+    transform: rotateY(270deg) rotateZ(-270deg);
   }
   50% {
-    transform: rotateY(-180deg) rotateZ(90deg);
+    transform: rotateY(180deg) rotateZ(-270deg);
   }
   66% {
-    transform: rotateY(-270deg) rotateX(90deg);
+    transform: rotateY(90deg) rotateX(-270deg);
   }
   83% {
-    transform: rotateX(90deg);
+    transform: rotateX(-270deg);
   }
 }

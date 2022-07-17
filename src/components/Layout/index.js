@@ -1,5 +1,4 @@
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable react/jsx-no-useless-fragment */
 import './index.scss';
 import React from 'react';
 import { Outlet } from 'react-router-dom';
