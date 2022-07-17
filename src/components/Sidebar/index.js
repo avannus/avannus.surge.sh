@@ -9,7 +9,6 @@ import LogoS from '../../assets/images/logo-image-256.png';
 import LogoSubtitle from '../../assets/images/logo-text-32.png';
 
 const iconColor = '#4d4d4e';
-image.png;
 function Sidebar() {
   return (
     <div className="nav-bar">
