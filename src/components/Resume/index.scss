@@ -1,0 +1,12 @@
+.pdf{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translatey(-45%);
+    width: 70%;
+    max-height: 90%;
+    .pages{
+      color: white;
+      font-size: 12px;
+    }
+}

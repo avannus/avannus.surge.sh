@@ -2,7 +2,9 @@
 import './index.scss';
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import {
+  faHome, faUser, faEnvelope, faFileAlt,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import LogoS from '../../assets/images/logo-image-256.png';
@@ -14,7 +16,7 @@ function Sidebar() {
     <div className="nav-bar">
       <Link className="logo" to="/">
         <img src={LogoS} alt="logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+        <img className="sub-logo" src={LogoSubtitle} alt="avannus" />
       </Link>
       <nav>
         <NavLink exact="true" activeclassname="active" to="/">
@@ -35,6 +37,14 @@ function Sidebar() {
           to="/contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color={iconColor} />
+        </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="resume-link"
+          to="/resume"
+        >
+          <FontAwesomeIcon icon={faFileAlt} color={iconColor} />
         </NavLink>
       </nav>
       <ul>
